@@ -3,7 +3,7 @@ import React from 'react';
 
 const GalleryPage = () => (
     <>
-        <h1>About Page</h1>
+        <h1>Gallery Page</h1>
     </>
 );
 

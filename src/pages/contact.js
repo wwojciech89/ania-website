@@ -3,7 +3,7 @@ import React from 'react';
 
 const ContactPage = () => (
     <>
-        <h1>About Page</h1>
+        <h1>Contact Page</h1>
     </>
 );
 

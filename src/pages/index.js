@@ -1,11 +1,10 @@
-import  React from "react"
-import { Link } from "gatsby"
-import styled from 'styled-components';
+import * as React from "react"
 import Navigation from "../components/Navigation/Navigation"
+
 
 const IndexPage = () => (
   <>
-  <hi>hello</hi>
+    <h1>Strona główna</h1>
   </>
 )
 
