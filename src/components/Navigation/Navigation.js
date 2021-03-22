@@ -1,9 +1,16 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const NavigationWrapper = styled.nav`
+display: flex;
+align-items: center;
+justify-content: flex-start;
+`;
 
 
 const Navigation = () => (
 
-    <nav>
+    <NavigationWrapper>
         <span>Ania Wojtkiewicz</span>
         <ul>
             <li>Home</li>
@@ -12,5 +19,5 @@ const Navigation = () => (
             <li>Kontakt</li>
             <li>Oferta</li>
         </ul>
-    </nav>
+    </NavigationWrapper>
 )
