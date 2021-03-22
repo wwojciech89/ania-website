@@ -3,10 +3,18 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 const NavigationWrapper = styled.nav`
+position: absolute;
+top: 20px;
+left: 30px;
 display: flex;
 align-items: center;
 justify-content: flex-start;
-font-family: 'Lato'
+font-family: 'Lato';
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
 `;
 
 const Logo = styled.span`
@@ -16,8 +24,6 @@ margin-right: 10px;
 `;
 
 const NavigationList = styled.ul`
-margin:0;
-padding: 0;
 list-style: none;
 display: flex;
 `;
@@ -33,11 +39,10 @@ margin-left: 32px;
 const Navigation = () => (
 
     <NavigationWrapper>
-        <Logo>Ania Wojtkiewicz</Logo>
+        <Logo><Link strict to="/">
+            Ania Wojtkiewicz</Link>
+            </Logo>
         <NavigationList>
-            <NavigationListItem>
-                <Link strict to="/">Home</Link>
-                </NavigationListItem>
             <NavigationListItem>
                 <Link to="/gallery">Galeria</Link>
                 </NavigationListItem>
