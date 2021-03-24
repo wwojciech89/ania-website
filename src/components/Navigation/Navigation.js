@@ -2,13 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-const NavigationWrapper = styled.nav`
-position: absolute;
-top: 20px;
-left: 30px;
+
+const NavigationWrapper = styled.div`
+position: fixed;
+background-color: peru;
+width: 100%;
+`
+
+const NavigationBar = styled.nav`
 display: flex;
 align-items: center;
-justify-content: flex-start;
+justify-content: space-around;
 font-family: 'Lato';
 
 a {
@@ -39,6 +43,7 @@ margin-left: 32px;
 const Navigation = () => (
 
     <NavigationWrapper>
+      <NavigationBar>
         <Logo><Link strict to="/">
             Ania Wojtkiewicz</Link>
             </Logo>
@@ -56,7 +61,9 @@ const Navigation = () => (
                 <Link to="/offer">Oferta</Link>
                 </NavigationListItem>
         </NavigationList>
+      </NavigationBar>
     </NavigationWrapper>
+   
 )
 
 export default Navigation;

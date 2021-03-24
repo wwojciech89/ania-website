@@ -13,7 +13,6 @@ html {
 
 body {
     margin: 0;
-    padding: 80px 65px 0;
     font-family: 'Lato';
 }
 
